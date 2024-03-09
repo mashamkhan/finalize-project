@@ -9,13 +9,17 @@
   <style>
 
     header {
-      background-color: #efe74a;
+      background-color: #56bce8;
       color: white;
       padding: 20px;
       text-align: center;
     }
+    form {
+    margin: auto;
+    width: fit-content;
+  }
   </style>
-  <header>
+  <header  >
     <nav>
         <a href="../index.html">Home</a> |
         <a href="../project/Projects.html">Projects</a> |
@@ -28,9 +32,33 @@
           <h2>Contact Me</h2>
           <p><img src="../image/icons8-email-30.png" alt=""> Email: <a href="mailto:maasham7776@gmail.com">mailme here</a></p>
           <p><img src="../image/icons8-phonecall-80.png" style="height: 30px;">Phone number:<a href="tel:+923188656506">03188656506</a></p>
-          <p><img src="../image/icons8-linkedin-48 (1).png" style="height: 35px;">LinkedIn: <a href="https://www.linkedin.com/in/masham-jan-706a702a3/">MY LinkedIn Profile</a></p>
+          <p><img src="../image/icons8-linkedin-48 (1).png" style="height: 35px;">LinkedIn: <a href="https://www.linkedin.com/in/masham-jan-706a702a3/" target="_blank">MY LinkedIn Profile</a></p>
           <!-- Add more contact details as needed -->
         </div>
       </div>
+      <fieldset>
+        <h2 style="text-align: center;">User Details Form</h2>
+        
+        <form >
+          <label for="fname"> Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="xyz...." required><br><br>
+          <!-- <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="xyz@gmail.com.."><br><br> -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="xyz@gmail.com.." required><br><br>
+          <label for="dob">Date of birth</label>
+          <input type="date" name="dob" id="dob" required >
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br><br>
+          <!-- <label for="comment">Comment:</label> -->
+          <textarea  id="comment" name="comment" rows="5" placeholder="leave your comment here.."></textarea><br><br>
+          <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 1em;">
+        </form>
+        </fieldset>
+
+ 
 </body>
 </html>
